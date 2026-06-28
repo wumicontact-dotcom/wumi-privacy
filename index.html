@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Wumi</title>
+<style>
+  :root { --bg:#FBF4EE; --card:#fff; --fg:#3A1F2E; --muted:#7a6470; --accent:#FF5D8F; --line:#f0e3e9; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  header { text-align:center; padding:24px 0 8px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  .updated { color:var(--muted); font-size:14px; }
+  .lang { text-align:center; margin:8px 0 24px; font-size:14px; }
+  .lang a { color:var(--accent); text-decoration:none; }
+  .card { background:var(--card); border-radius:20px; padding:24px 26px; margin:16px 0;
+    box-shadow:0 2px 12px rgba(58,31,46,.06); }
+  h2 { font-size:19px; margin:24px 0 8px; }
+  h2:first-child { margin-top:0; }
+  ul { padding-left:20px; }
+  li { margin:4px 0; }
+  table { width:100%; border-collapse:collapse; margin:8px 0; font-size:14px; }
+  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  code { background:#f5ebf0; padding:1px 6px; border-radius:6px; font-size:13px; }
+  a { color:var(--accent); }
+  .summary { background:#fff4f8; border:1px solid #ffd9e6; }
+  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🌸 Wumi</h1>
+    <div class="updated">Politique de confidentialité — dernière mise à jour : 16 juin 2026</div>
+  </header>
+
+  <div class="card summary">
+    <h2>En résumé</h2>
+    <p>Cette application <strong>ne collecte, ne stocke et ne partage aucune donnée personnelle identifiable</strong>. Vos contenus (pet, journal, préférences) restent stockés localement sur votre appareil. Deux connexions réseau existent, toutes deux <strong>sans donnée personnelle</strong> : la météo de votre région (optionnelle) et des <strong>statistiques d'usage anonymes + rapports de plantage</strong> destinés à améliorer l'application.</p>
+  </div>
+
+  <div class="card">
+    <h2>Données stockées localement</h2>
+    <p>L'application enregistre sur votre appareil uniquement :</p>
+    <ul>
+      <li>État de votre pet virtuel (faim, bonheur, énergie, âge, position)</li>
+      <li>Préférences (nom du pet, couleur choisie, accessoires achetés et équipés)</li>
+      <li>Compteur de graines (monnaie virtuelle interne à l'application)</li>
+      <li>Achievements débloqués</li>
+      <li>Préférences d'affichage (lockscreen activé ou non, son, etc.)</li>
+    </ul>
+    <p>Ces données sont stockées dans la base interne Android et les SharedPreferences privées de l'application. Elles ne quittent jamais votre appareil.</p>
+
+    <h2>Météo réelle (fonction optionnelle)</h2>
+    <p>Pour que le ciel de Wumi corresponde à votre météo réelle, l'application peut :</p>
+    <ul>
+      <li>Lire votre <strong>localisation approximative</strong> (niveau ville, jamais GPS précis), via la dernière position connue de l'appareil — sans activer le GPS.</li>
+      <li>Envoyer <strong>uniquement ces coordonnées approximatives</strong> au service météo gratuit <strong>open-meteo.com</strong> pour obtenir les conditions actuelles.</li>
+    </ul>
+    <p>Aucune autre donnée n'est transmise. <strong>Si vous refusez la permission de localisation, l'application fonctionne normalement</strong> : Wumi utilise alors une météo simulée locale.</p>
+
+    <h2>Statistiques d'usage et rapports de plantage (anonymes)</h2>
+    <p>Pour comprendre comment l'application est utilisée et corriger les bugs, Wumi utilise <strong>Google Firebase (Analytics + Crashlytics)</strong>. Sont transmis uniquement :</p>
+    <ul>
+      <li>Des <strong>événements d'usage anonymes</strong> : ouverture de l'app, affichage du pet sur le fond d'écran, interaction avec le pet, sauvegarde d'une entrée de journal (<strong>le contenu de vos notes n'est jamais transmis</strong>), enregistrement d'une humeur, activation d'un module optionnel, lancement d'un mini-jeu.</li>
+      <li>Des <strong>rapports de plantage</strong> (trace technique de l'erreur, modèle d'appareil, version Android).</li>
+    </ul>
+    <p>Ces données sont <strong>agrégées et anonymes</strong> : aucun identifiant personnel, aucun contenu de journal, aucune localisation précise. Elles ne sont <strong>pas vendues ni partagées</strong> à des fins publicitaires. Voir la <a href="https://firebase.google.com/support/privacy">politique de confidentialité de Firebase/Google</a>.</p>
+
+    <h2>Données NON collectées</h2>
+    <p>L'application <strong>ne collecte pas</strong> :</p>
+    <ul>
+      <li>Identifiants personnels (nom, e-mail, numéro de téléphone)</li>
+      <li>Localisation précise (GPS)</li>
+      <li>Identifiants publicitaires</li>
+      <li>Historique de navigation</li>
+      <li>Liste des contacts</li>
+      <li>Photos, vidéos, fichiers</li>
+      <li>Information sur d'autres applications installées</li>
+      <li><strong>Le contenu de votre journal ou de vos humeurs</strong> (seul l'événement « une entrée a été créée » est compté, jamais le texte)</li>
+    </ul>
+
+    <h2>Données de santé (fonction optionnelle)</h2>
+    <p>Si vous l'activez, l'application lit vos <strong>pas</strong> et votre <strong>sommeil</strong> via <strong>Health Connect</strong> pour nourrir/reposer Wumi. Ces données sont lues localement, utilisées immédiatement pour ajuster les stats du pet, <strong>ne sont jamais transmises</strong> et ne sont pas conservées au-delà du calcul. Sans votre autorisation explicite, cette fonction reste inactive.</p>
+
+    <h2>Permissions demandées et leurs usages</h2>
+    <table>
+      <tr><th>Permission</th><th>Pourquoi</th></tr>
+      <tr><td><code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>Maintenir l'animation du wallpaper et la fonctionnalité lockscreen optionnelle</td></tr>
+      <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Restaurer l'état du pet et l'overlay lockscreen après redémarrage</td></tr>
+      <tr><td><code>POST_NOTIFICATIONS</code></td><td>Vous avertir quand votre pet a besoin de soin (Android 13+)</td></tr>
+      <tr><td><code>VIBRATE</code></td><td>Retour haptique léger lors d'interactions avec le pet</td></tr>
+      <tr><td><code>TURN_SCREEN_ON</code></td><td>Afficher l'overlay lockscreen quand l'écran s'allume (si activé)</td></tr>
+      <tr><td><code>SET_WALLPAPER</code></td><td>Retirer Wumi du fond d'écran depuis les réglages</td></tr>
+      <tr><td><code>INTERNET</code></td><td>Récupérer la météo réelle auprès d'open-meteo (optionnel)</td></tr>
+      <tr><td><code>ACCESS_COARSE_LOCATION</code></td><td>Localisation approximative (niveau ville) pour la météo réelle (optionnel)</td></tr>
+      <tr><td><code>health.READ_STEPS</code> / <code>health.READ_SLEEP</code></td><td>Lire pas + sommeil via Health Connect pour nourrir Wumi (optionnel)</td></tr>
+    </table>
+
+    <h2>Services tiers</h2>
+    <ul>
+      <li><strong>open-meteo.com</strong> — service météo gratuit, sans compte ni clé API. Reçoit uniquement une localisation approximative lors d'une requête, aucune donnée personnelle. <a href="https://open-meteo.com/en/terms">Politique open-meteo</a>.</li>
+      <li><strong>Google Firebase (Analytics + Crashlytics)</strong> — statistiques d'usage anonymes et rapports de plantage. Aucune donnée personnelle, aucun contenu de journal, aucune localisation précise. <a href="https://firebase.google.com/support/privacy">Politique Firebase/Google</a>.</li>
+    </ul>
+    <p>Aucun SDK publicitaire n'est utilisé.</p>
+
+    <h2>Sauvegarde Android</h2>
+    <p>L'application <strong>désactive explicitement</strong> la sauvegarde automatique Google Drive (<code>android:allowBackup="false"</code> + <code>data_extraction_rules.xml</code> excluant tous les domaines). Aucune donnée pet n'est synchronisée vers le cloud Google.</p>
+
+    <h2>Enfants</h2>
+    <p>Cette application ne collecte aucune donnée personnelle identifiable, y compris auprès des enfants de moins de 13 ans. Les seules données transmises sont des statistiques d'usage anonymes et des rapports de plantage techniques.</p>
+
+    <h2>Vos droits</h2>
+    <ul>
+      <li>Supprimer toutes les données en désinstallant l'application</li>
+      <li>Réinitialiser le pet via les paramètres de l'application</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Pour toute question concernant cette politique : <strong><a href="mailto:wumi.contact@gmail.com">wumi.contact@gmail.com</a></strong></p>
+
+    <h2>Modifications</h2>
+    <p>Toute modification de cette politique sera publiée à la même URL avec mise à jour de la date ci-dessus.</p>
+  </div>
+
+  <footer>© 2026 Wumi</footer>
+</div>
+</body>
+</html>
